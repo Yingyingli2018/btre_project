@@ -149,3 +149,9 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER='yingying.zion@gmail.com'
 EMAIL_HOST_PASSWORD='50291733Yy'
 EMAIL_USE_TLS=True
+
+# Local settings Setup
+try:
+    from .local_settings import *
+except ImportError:
+    pass
